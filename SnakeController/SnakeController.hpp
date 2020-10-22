@@ -33,6 +33,12 @@ public:
 
     void timerEvent(TimeoutInd event);
 
+    void changeDirection(Direction direction);
+
+    void newFood(FoodInd receivedFood);
+
+    void eat(FoodResp requestedFood);
+
 private:
     struct Segment
     {
