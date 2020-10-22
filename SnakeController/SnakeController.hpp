@@ -31,6 +31,8 @@ public:
 
     void receive(std::unique_ptr<Event> e) override;
 
+    void timerEvent(TimeoutInd event);
+
 private:
     struct Segment
     {
